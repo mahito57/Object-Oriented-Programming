@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: black;" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.SearchByPlayerController">
+   <children>
+      <ImageView blendMode="ADD" fitHeight="422.0" fitWidth="614.0" opacity="0.34" pickOnBounds="true">
+         <image>
+            <Image url="@../2020-world11-men-1100-names.jpg" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="14.0" prefHeight="400.0" prefWidth="587.0">
+         <children>
+            <Button fx:id="name" layoutX="16.0" layoutY="31.0" mnemonicParsing="false" onAction="#SearchByName" prefHeight="41.0" prefWidth="297.0" style="-fx-background-radius: 1000;" stylesheets="@Style.css" text="By Player Name" textFill="#0d0b86">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="club" layoutX="16.0" layoutY="86.0" mnemonicParsing="false" onAction="#SearchByClub" prefHeight="41.0" prefWidth="297.0" style="-fx-background-radius: 1000;" stylesheets="@Style.css" text="By Club and Country" textFill="#0d0b86">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="position" layoutX="16.0" layoutY="144.0" mnemonicParsing="false" onAction="#SearchByPosition" prefHeight="41.0" prefWidth="297.0" style="-fx-background-radius: 1000;" stylesheets="@Style.css" text="By Position" textFill="#0d0b86">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="salary" layoutX="16.0" layoutY="200.0" mnemonicParsing="false" onAction="#SearchBySalary" prefHeight="41.0" prefWidth="297.0" style="-fx-background-radius: 1000;" stylesheets="@Style.css" text="By Salary Range" textFill="#0d0b86">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="country" layoutX="16.0" layoutY="260.0" mnemonicParsing="false" onAction="#CountryCount" prefHeight="41.0" prefWidth="297.0" style="-fx-background-radius: 1000;" stylesheets="@Style.css" text="Country Wise Player Count" textFill="#0d0b86">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="backto1" layoutX="16.0" layoutY="321.0" mnemonicParsing="false" onAction="#go_back" prefHeight="41.0" prefWidth="297.0" style="-fx-background-radius: 1000;" stylesheets="@Style.css" text="Back to MainMenu" textFill="#0d0b86">
+               <font>
+                  <Font size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.effect.Shadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="545.0" prefWidth="660.0" style="-fx-background-color: #1b7c80;">
+         <children>
+            <ImageView fx:id="image1" blendMode="OVERLAY" fitHeight="545.0" fitWidth="698.0" pickOnBounds="true">
+               <image>
+                  <Image url="@../fifa-21-ultimate-team.jpg" />
+               </image>
+            </ImageView>
+            <Button fx:id="search_club" layoutX="414.0" layoutY="63.0" mnemonicParsing="false" onAction="#entering2" prefHeight="71.0" prefWidth="270.0" style="-fx-background-radius: 100;" stylesheets="@Style.css" text="Search_Club">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting specularConstant="0.5" specularExponent="30.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="search_player" cache="true" layoutX="14.0" layoutY="63.0" mnemonicParsing="false" onAction="#entering1" prefHeight="71.0" prefWidth="270.0" style="-fx-background-radius: 100;" stylesheets="@Style.css" text="Search_Player">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting specularConstant="0.5" specularExponent="30.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="exit_System" layoutX="414.0" layoutY="424.0" mnemonicParsing="false" onAction="#exiting" prefHeight="71.0" prefWidth="270.0" style="-fx-background-radius: 100;" stylesheets="@Style.css" text="Exit_System">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting specularConstant="0.5" specularExponent="30.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+            <Button fx:id="add_Player" layoutX="14.0" layoutY="434.0" mnemonicParsing="false" onAction="#entering3" prefHeight="71.0" prefWidth="270.0" style="-fx-background-radius: 100;" stylesheets="@Style.css" text="Add_Player">
+               <font>
+                  <Font size="30.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting specularConstant="0.5" specularExponent="30.0">
+                     <bumpInput>
+                        <Shadow />
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
